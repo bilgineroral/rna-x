@@ -8,8 +8,8 @@ rna_fasta_file = "data/yeast_rna_sequences.fasta"
 protein_fasta_file = "data/yeast_protein_sequences.fasta"
 
 output_pairs = "data/yeast_rnact.txt"
-output_rna = "data/rna_sequences.txt"
-output_protein = "data/protein_sequences.txt"
+output_rna = "data/yeast_rna_sequences.txt"
+output_protein = "data/yeast_protein_sequences.txt"
 error_log_file = "logs/errors.log"
 
 # Load RNA sequences into a dictionary
@@ -91,7 +91,7 @@ print(f"\nProcessing complete! Outputs:")
 print(f"   - Pairs: {output_pairs}")
 print(f"   - RNA Sequences: {output_rna}")
 print(f"   - Protein Sequences: {output_protein}")
-print(f" Could not add {errors} pairs due to missing sequences.")
+print(f"Could not add {errors} pairs due to missing sequences.")
 print(f"Missing sequences logged in {error_log_file}.")
 
 os.remove(rna_fasta_file)

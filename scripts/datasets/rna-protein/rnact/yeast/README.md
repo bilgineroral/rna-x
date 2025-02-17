@@ -1,6 +1,11 @@
 # RNAct - Yeast (Saccharomyces Cerevisiae)
 
-> **Important**: Run all scripts at this directory level. 
+> **Important**: Run all scripts at this directory level.
+
+To download binding RNA-protein pairs of yeast (S. Cerevisiae) from RNAct, simply type:
+```
+bash download-rnact-yeast.sh
+```
 
 1. **download-rnact-yeast.sh**
     This script downloads the RNA-protein pairs of yeast from RNAct database, and saves it in `yeast-rnact.txt`. The RNAct provides the file `catrapid_yeast_normalised.txt`, which have the following format:
@@ -20,4 +25,4 @@
     This script creates a file named `yeast_protein_sequences.fasta` to filter downloaded protein sequences to include only those who have entries in `catrapid_yeast_normalised.txt`.
 
 4. **prepare-yeast-dataset.py**
-    This script replaces UniProt accession IDs and Ensembl Transcript IDs by their corresponding protein/RNA sequences, and creates the final dataset file `yeast-rnact.txt`. This file consists of binding RNA and protein IDs. It also creates `protein_sequences.txt` and `rna_sequences.txt` files, which consists of RNA/Protein ID - sequence mappings.
+    This script creates the final dataset file `yeast-rnact.txt`. This file consists of binding RNA and protein IDs. It also creates `yeast_protein_sequences.txt` and `yeast_rna_sequences.txt` files, which consists of RNA/Protein ID - sequence mappings.
