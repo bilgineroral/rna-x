@@ -6,6 +6,7 @@ To download binding RNA-protein pairs of yeast (S. Cerevisiae) from RNAct, simpl
 ```
 bash download-rnact-yeast.sh
 ```
+Make sure dependencies are installed (`requirements.txt`).
 
 1. **download-rnact-yeast.sh**
     This script downloads the RNA-protein pairs of yeast from RNAct database, and saves it in `yeast-rnact.txt`. The RNAct provides the file `catrapid_yeast_normalised.txt`, which have the following format:
